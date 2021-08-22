@@ -1,4 +1,5 @@
 student_heights = [165, 166, 178, 157, 152, 173, 180]
+# print(sum(student_heights))
 total_height = 0
 total_number_of_students = 0 
 
