@@ -1,4 +1,7 @@
 import random 
+import stages
+
+hangmanStages = stages.stages
 
 word_arr = [ "philippines", "english", "aeroplane", "ghost"]
 
@@ -10,7 +13,7 @@ empty_game_arr = ["_" for char in random_word]
 print(f'This is the word that you have to guess {["_" for char in random_word]}')
 
 game_end = False
-life = 5
+life = 7
 
 chars = [char for char in random_word]
 emptyGame = []
@@ -23,7 +26,7 @@ while not game_end:
             empty_game_arr[position] = letter
     if guessedLetter not in chars:
         life -= 1
-        print(life)
+        print(hangmanStages[life])
     print(empty_game_arr)
     if life <= 0:
         game_end  = True
