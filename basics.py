@@ -5,12 +5,17 @@ print("Hello world"[0])
 
 print(1)
 
-print(type(1) == "int")
+print("integer hai ki nahi", type(1) == "int")
 
 # type conversion
-intro = "I am"
-age = 27
-isIndian = True
+name = input("Please enter you name")
+intro = f"{name} is"
+age = 28
+checkIndian = input("are you Indian y/n ")
+if checkIndian == "y":
+    isIndian = True
+else:
+    isIndian = False
 ageInStr = str(age)
 print(intro + ageInStr)
 
